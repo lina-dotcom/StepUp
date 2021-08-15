@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=0.5">
+		<link rel="stylesheet" href="account.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" type="image/jpg" href="stepuplogo.png"/>
+		<title>Saved Items</title>
+	</head>
+
+	<body>
+		<nav>
+			<a href='index'>Home</a>
+			<a onclick='logout()'>Logout</a>
+		</nav>
+		<main>
+			{{#private}}
+			<div class="divmain">
+				<h2>Matches</h2>
+				<div id=interests><h3>Your Interests:<br> {{Interests}}</h3></div>
+				<h4>We've compiled some opportunities and scholarships we think you'll like from your interests.</h4>
+				
+				<div class="smallerdiv">
+                	<div style="display:inline-block; width:400px; padding:5px 5px;"> 
+                    <h3>NIG Summer Internship in Japan 2021</h3>
+				        <p>NIG Summer Internship in Japan 2021 is welcoming undergraduate and postgraduate students for research internships. It is a fully-funded paid internship in Japan for international students. It is a great opportunity for all those students who are wishing to gain research experience in life sciences and genetics.</p>
+                    </div>
+                    <button class="bookmarkbutton" onclick="document.getElementById('bookmark1').src='bookmark.png'">
+                   <img id="bookmark1" src="bookmark-o.png" class="bookmark-img"></button>
+                    <br>
+					<a href="https://scholarshipscorner.website/nig-summer-internship-in-japan/">Learn More</a><br><br>
+
+                <div class="tags" style="background-color:#71825a">Internship</div>
+				    	<div class="tags" style="background-color:#71825a">Science</div>
+				    	<div class="tags" style="background-color:#71825a">International</div><h3>3/3 Match</h3>
+				    	</div><br>
+				
+				<div class="smallerdiv">
+                	<div style="display:inline-block; width:400px; padding:5px 5px;"> 
+                    <h3>Plant Genomics Internship</h3>
+				        <p>Paid research internships are available in the College of Agriculture, Food and Natural Resources (CAFNR) to provide opportunities for undergraduate students to gain research experience on campus.</p>
+                    </div>
+                    <button class="bookmarkbutton" onclick="document.getElementById('bookmark3').src='bookmark.png'">
+                   <img id="bookmark3" src="bookmark-o.png" class="bookmark-img"></button>
+                    <br>
+					<a href="https://cafnr.missouri.edu/degrees-and-programs/research-internships/">Learn More</a><br>
+<br>
+                <div class="tags">Research</div>
+				    	<div class="tags" style="background-color:#71825a">Science</div>
+				    	<div class="tags" style="background-color:#71825a">USA</div><h3>2/3 Match</h3>
+				    	</div><br>
+      
+                <div class="smallerdiv">
+                	<div style="display:inline-block; width:400px; padding:5px 5px;"> 
+                    <h3>Betty Harlan Memorial Art Scholarship</h3>
+				        <p>The Betty Harlan Memorial Art Scholarship provides educational resources to students pursuing a degree in the visual arts. </p>
+                    </div>
+                    <button class="bookmarkbutton" onclick="document.getElementById('bookmark2').src='bookmark.png'">
+                   <img id="bookmark2" src="bookmark-o.png" class="bookmark-img"></button>
+                    <br>
+					<a href="https://www.scholarships.com/financial-aid/college-scholarships/scholarships-by-major/art-scholarships/betty-harlan-memorial-art-scholarship/#">Learn More</a>
+					<br>
+					<br>
+					<div class="tags" style="background-color:#71825a">Scholarships</div>
+				    	<div class="tags">Art</div>
+				    	<div class="tags" style="background-color:#71825a">USA</div><h3>2/3 Match</h3>
+				    	</div>
+				    	
+				
+			</div>
+			{{/private}}
+			
+			{{^private}}
+				<script>
+					location.href = 'index';
+				</script>
+			{{/private}}
+		</main>
+		<script type="module" src="matches.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,45 @@
+body{
+    padding:0;
+    margin:0;
+    height:100%;
+    background:linear-gradient(#278b30,#51d8e2);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+main  {
+	margin:2em 1em;
+	text-align:center;
+	background:linear-gradient(#0d8d38,#4C3AE3);
+	border-radius:10px;	
+	padding:20px;
+	box-sizing:border-box;
+    height: 1200px;
+    width:40%;
+    transform:translate(450px,0px);
+    
+    box-shadow: 2px black;
+}
+.box1{
+	margin:2em 1em;
+	text-align:center;
+	background-color: rgb(80, 184, 175);
+	border-radius:10px;	
+	padding:20px;
+	box-sizing:border-box;
+    height: 20px;
+    line-height:4px;
+    width:60%;
+    transform:translate(120px,0px);
+}
+
+.box2{
+	margin:2em 1em;
+	text-align:center;
+	background-color: rgb(80, 184, 175);
+	border-radius:10px;	
+	padding:20px;
+	box-sizing:border-box;
+    height: 300px;
+    width:70%;
+    transform:translate(90px,0px);
+}

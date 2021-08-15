@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=0.5">
+		<link rel="stylesheet" href="account2.css">
+		<script type="module" src="script.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" type="image/jpg" href="stepuplogo.png"/>
+		<title>Your Account</title>
+	</head>
+
+	<body>
+		<nav>
+			<a onclick='logout()'>Logout</a>
+			<a href='index'>Home</a>
+			<a href="matches">Your Matches</a>
+		</nav>
+		<main>
+			{{#private}}
+			<div id="account">
+				<h2>Your Account</h2>
+				<button onclick="location.href='saved'" type="button" id="saved">Saved Items</button>
+				<h3><b>{{username}}</b></h3>
+				<h3>Gender: {{Gender}}</h3>
+				<h3>Grade: {{Grade}}</h3>
+				<h3>Country: {{Country}}</h3>
+				<div id=interests><h3>Interests:<br> {{Interests}}</h3></div>
+				<img src='{{avatar}}'>
+				<br>
+				
+				<!--<button onclick="location.href='edit'" type="button" id="edit">Edit</button>-->
+			</div>
+			{{/private}}
+			
+			{{^private}}
+				<script>
+					location.href = 'index';
+				</script>
+			{{/private}}
+		</main>
+		<footer>
+			© 2021 The StepUp Team Techacks
+		</footer>
+	</body>
+
+</html>

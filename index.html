@@ -1,0 +1,126 @@
+<!--PLEASE DO NOT EDIT THIS PAGE!-->
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=0.5">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type = "module" src = "script.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+			
+		<link rel="shortcut icon" type="image/jpg" href="stepuplogo.jpg"/>
+		<title>StepUp</title>
+	</head>
+
+	<body>
+		<nav>
+			{{^private}}
+				<a href='login'>Login</a>
+				<a href='signup'>Sign Up</a>
+				<a href="opportunities">Opportunities</a>
+				<a href="scholarships">Scholarships</a>
+				<a href="index">Home</a>
+			{{/private}}
+			
+			{{#private}}
+				<a href='account'>
+					<img src='{{avatar}}'>
+				</a>
+				<a onclick='logout()'>Logout</a>
+				<a href="matches">Your Matches</a>
+				<a href="opportunities">Opportunities</a>
+				<a href="scholarships">Scholarships</a>
+				<a href="index">Home</a>
+			{{/private}}
+			<h1 id="logo">StepUp</h1>
+		</nav>
+		<main>
+			<div>
+			<div class="main-div">
+				<img src="stepup.svg">
+				<p>{{Saved}}</p>
+				<div class="site-desc">
+					<p>Being a student is hard. And we understand that. So here is the site you've been waiting for for so long, where all the information you need about internships, research, awards and scholarships is just a click away. </p>
+				</div>
+				<br>
+				<div class="search-section">
+    				<div class="searching" style="display: inline;">
+    					<input type="text" placeholder="Search.." class="input"><button type="submit" style="display:inline;" class="btn" goto="#"><i class="fa fa-search"></i></button>
+    				</div></div>
+    				<br><br>
+				<div class="flex-container">
+				
+				  <div class="flex-child magenta">
+				    <h2>Featured Awards</h2>
+				    <div class="inside-div">
+				    	<br>
+				    	<h3 style="display:inline;">Betty Harlan Memorial Art Scholarship</h3> 
+				    	<button class="bookmarkbutton" style="display:inline;"  onclick="bookmarkartsch()">
+				    		<img id="bookmarkartsch" class="bookmark-img" src="bookmark-o.png"></button>
+				    	<p>The Betty Harlan Memorial Art Scholarship provides educational resources to students pursuing a degree in the visual arts. Applicant must be a graduating senior from a public or private high school who resides in Boone, Ogle, or Winnebago County,
+who plans to pursue a degree in visual arts, visual art education, or visual art history, has a minimum 2.75 GPA, and shows involvement in organizations and activities that focus on the visual arts. For more information or to apply, please visit the scholarship provider's website.</p>
+						<a href="https://www.scholarships.com/financial-aid/college-scholarships/scholarships-by-major/art-scholarships/betty-harlan-memorial-art-scholarship/#">Learn More</a><br><br>
+				    	<div class="tags">Scholarships</div>
+				    	<div class="tags">Art</div>
+				    	<div class="tags">USA</div><br><br><br></div>
+				    	
+				    <br>
+				    <div class="inside-div">
+				    	<br>
+				    	<h3 style="display:inline;">British Chevening Scholarships 2022</h3> 
+				    	<button class="bookmarkbutton" style="display:inline;"  onclick="bookmarkmatsch()">
+				    		<img id="bookmarkmatsch" class="bookmark-img" src="bookmark-o.png"></button>
+				    	<p>British Chevening Scholarships 2022 is open for Developing Countries, Commonwealth Countries Chevening Countries. The scholarship allows Postgraduate, Masters level programm(s) in the field of All Subjects taught at UK Universities . The deadline of the scholarship is 02 Nov 2021.</p>
+				    	<a href="https://www.scholarshipsads.com/british-chevening-scholarships-for-international-students/">Learn More</a><br><br>
+				    	<div class="tags">Scholarships</div>
+				    	<div class="tags">Postgraduate</div>
+				    	<div class="tags">UK</div><br><br><br></div>
+				    <h3><a href="scholarships">See More</a></h3>
+				    <br>
+				    </div>
+				  
+				  
+				  <div class="flex-child green"><h2>Featured Opportunities</h2>
+				    <div class="inside-div">
+				    	<br>
+				    	<h3 style="display:inline;">NIG Summer Internship in Japan 2021</h3> 
+				    	<button class="bookmarkbutton" style="display:inline;"  onclick="bookmarkmicopp()">
+				    		<img id="bookmarkmicopp" class="bookmark-img" src="bookmark-o.png"></button>
+				    	<p>NIG Summer Internship in Japan 2021 is welcoming undergraduate and postgraduate students for research internships. It is a fully-funded paid internship in Japan for international students. It is a great opportunity for all those students who are wishing to gain research experience in life sciences and genetics.National Institute of Genetics opens the door for amazing and innovative research projects for the interns. Moreover, all interns would get the chance to conduct independent research under the supervision of the research mentors at NIG. This internship program would include international laboratory visits, training on scientific communication, and scientific research.</p><a href="https://scholarshipscorner.website/nig-summer-internship-in-japan/">Learn More</a><br><br>
+				    	<div class="tags">Internship</div>
+				    	<div class="tags">Science</div>
+				    	<div class="tags">International</div><br><br><br></div>
+				    	
+				    <br>
+				    <div class="inside-div">
+				    	<br>
+				    	<h3 style="display:inline;">Plant Genomics Internship</h3> 
+				    	<button class="bookmarkbutton" style="display:inline;"  onclick="bookmarkresopp()">
+				    		<img id="bookmarkresopp" class="bookmark-img" src="bookmark-o.png"></button>
+				    	<p>Paid research internships are available in the College of Agriculture, Food and Natural Resources (CAFNR) to provide opportunities for undergraduate students to gain research experience on campus.
+
+Students develop a research proposal with the assistance of a faculty mentor.
+Students whose projects are approved prepare and present their research results at a poster display in the spring.
+Students receive a stipend of $1,250 per semester.</p> <a href="https://cafnr.missouri.edu/degrees-and-programs/research-internships/">Learn More</a><br><br>
+				    	<div class="tags">Research</div>
+				    	<div class="tags">Science</div>
+				    	<div class="tags">USA</div><br><br><br></div>
+				    <h3><a href="opportunities">See More</a></h3>
+				    <br>
+				  </div>
+				</div>
+
+			</div></div>
+		</main>
+		<script src = "script.js"></script>
+		
+	<p id="footer">
+			© 2021 The StepUp Team Techacks
+		</p>
+	</body>
+
+</html>

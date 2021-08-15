@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=0.5">
+		<link rel="stylesheet" href="account.css">
+		<script type="module" src="script.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" type="image/jpg" href="stepuplogo.png"/>
+		<title>Saved Items</title>
+	</head>
+
+	<body>
+		<nav>
+			<a href='index'>Home</a>
+			<a onclick='logout()'>Logout</a>
+		</nav>
+		<main>
+			{{#private}}
+			<div class="divmain">
+				<h2>Saved</h2>
+				<br>
+				<div class="smallerdiv"><br>
+				<div style="display:inline-block; width:300px; padding:5px 5px;"> 
+				    	<h3>Betty Harlan Memorial Art Scholarship</h3>
+				    	<p>The Betty Harlan Memorial Art Scholarship provides educational resources to students pursuing a degree in the visual arts. </p></div>
+<div style="display:inline-block;">
+<img id="bookmarkartsch" class="bookmark-img" src="bookmark.png"><br></div><br>
+						<a href="https://www.scholarships.com/financial-aid/college-scholarships/scholarships-by-major/art-scholarships/betty-harlan-memorial-art-scholarship/#">Learn More</a><br><br>
+				    	<div class="tags">Scholarships</div>
+				    	<div class="tags">Art</div>
+				    	<div class="tags">USA</div><br><br><br></div>
+				    	
+				    	<br>
+				    	
+				    	<div class="smallerdiv"><br>
+				<div style="display:inline-block; width:300px; padding:5px 5px;"> 
+				    	<h3>Plant Genomics Internship</h3>
+				    	<p>Paid research internships are available in the College of Agriculture, Food and Natural Resources (CAFNR) to provide opportunities for undergraduate students to gain research experience on campus. </p></div>
+<div style="display:inline-block;">
+<img id="bookmarkartsch" class="bookmark-img" src="bookmark.png"><br></div><br>
+						<a href="https://cafnr.missouri.edu/degrees-and-programs/research-internships/">Learn More</a><br><br>
+				    	<div class="tags">Research</div>
+				    	<div class="tags">Science</div>
+				    	<div class="tags">USA</div><br><br><br></div>
+				
+			</div>
+			{{/private}}
+			
+			{{^private}}
+				<script>
+					location.href = 'index';
+				</script>
+			{{/private}}
+		</main>
+	</body>
+
+</html>

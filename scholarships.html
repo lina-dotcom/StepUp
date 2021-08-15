@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="scholarships.css">
+		<script type = "module" src = "script.js"></script>
+		<link rel="shortcut icon" type="image/jpg" href="stepuplogo.png"/>
+		<meta http-equiv ="X-UA-Compatible" content="ie=edge">
+		<title>Opportunities</title>
+	</head>
+	<body>
+		<nav>
+			{{^private}}
+				<a href='login'>Login</a>
+				<a href='signup'>Sign Up</a>
+				<a href="opportunities">Opportunities</a>
+				<a href="scholarships">Scholarships</a>
+				<a href="index">Home</a>
+			{{/private}}
+			
+			{{#private}}
+				<a href='account'>
+					<img src='{{avatar}}'>
+				</a>
+				<a onclick='logout()'>Logout</a>
+				<a href="matches">Your Matches</a>
+				<a href="opportunities">Opportunities</a>
+				<a href="scholarships">Scholarships</a>
+				<a href="index">Home</a>
+			{{/private}}
+			<h1 id="logo">StepUp</h1>
+		</nav>
+		<main>
+			
+		<div class="oppsch-div">
+			<h1>Scholarships and Awards</h1>
+			<br>
+				<div class="search-section">
+    				<div class="searching" style="display: inline;">
+    					<input type="text" placeholder="Search.." class="input"><button type="submit" style="display:inline;" class="btn" goto="#"><i class="fa fa-search"></i></button>
+    				</div></div>
+    				<br><br>
+    				<div class="flex-container">
+				
+				  <div class="flex-child magenta">
+				    <h2>Featured Scholarships</h2>
+				    <div class="inside-div">
+				    	<br>
+				    	<h3 style="display:inline;">Betty Harlan Memorial Art Scholarship</h3> 
+				    	<button class="bookmarkbutton" style="display:inline;"  onclick="bookmarkartsch()">
+				    		<img id="bookmarkartsch" class="bookmark-img" src="bookmark-o.png"></button>
+				    	<p>The Betty Harlan Memorial Art Scholarship provides educational resources to students pursuing a degree in the visual arts. Applicant must be a graduating senior from a public or private high school who resides in Boone, Ogle, or Winnebago County,
+who plans to pursue a degree in visual arts, visual art education, or visual art history, has a minimum 2.75 GPA, and shows involvement in organizations and activities that focus on the visual arts. For more information or to apply, please visit the scholarship provider's website.</p>
+						<a href="https://www.scholarships.com/financial-aid/college-scholarships/scholarships-by-major/art-scholarships/betty-harlan-memorial-art-scholarship/#">Learn More</a><br><br>
+				    	<div class="tags">Scholarships</div>
+				    	<div class="tags">Art</div>
+				    	<div class="tags">USA</div><br><br><br></div>
+				    	
+				    <br>
+				    <div class="inside-div">
+				    	<br>
+				    	<h3 style="display:inline;">British Chevening Scholarships 2022</h3> 
+				    	<button class="bookmarkbutton" style="display:inline;"  onclick="bookmarkmatsch()">
+				    		<img id="bookmarkmatsch" class="bookmark-img" src="bookmark-o.png"></button>
+				    	<p>British Chevening Scholarships 2022 is open for Developing Countries, Commonwealth Countries Chevening Countries. The scholarship allows Postgraduate, Masters level programm(s) in the field of All Subjects taught at UK Universities . The deadline of the scholarship is 02 Nov 2021.</p>
+				    	<a href="https://www.scholarshipsads.com/british-chevening-scholarships-for-international-students/">Learn More</a><br><br>
+				    	<div class="tags">Scholarships</div>
+				    	<div class="tags">Postgraduate</div>
+				    	<div class="tags">UK</div><br><br><br></div>
+				    
+				    <br>
+				    </div>
+				  
+				  
+				  <div class="flex-child green"><h2>Featured Awards</h2>
+				    <div class="inside-div">
+				    	<br>
+				    	<h3 style="display:inline;">The President’s Educational Excellence Award</h3> 
+				    	<button class="bookmarkbutton" style="display:inline;"  onclick="bookmarkmicopp()">
+				    		<img id="bookmarkmicopp" class="bookmark-img" src="bookmark-o.png"></button>
+				    	<p> This award recognizes academic success in the classroom. To be eligible, students must meet requirements, including grade point average or, school-set criteria and choice of state tests or teacher recommendations. </p><a href="https://www2.ed.gov/programs/presedaward/eligibility.html">Learn More</a><br><br>
+				    	<div class="tags">Award</div>
+				    	<div class="tags">All Subjects</div>
+				    	<div class="tags">USA</div><br><br><br></div>
+				    	
+				    <br>
+				    <div class="inside-div">
+				    	<br>
+				    	<h3 style="display:inline;">The Presidential Service Award</h3> 
+				    	<button class="bookmarkbutton" style="display:inline;"  onclick="bookmarkresopp()">
+				    		<img id="bookmarkresopp" class="bookmark-img" src="bookmark-o.png"></button>
+				    	<p>The President's Volunteer Service Award is a civil award bestowed by the President of the United States. Established by executive order by George W. Bush, the award was established to honor volunteers that give hundreds of hours per year helping others through the President's Council on Service and Civic Participation. The award can be granted to individuals, families and organizations located throughout the United States. Depending on the amount of service hours completed, individuals can receive the Bronze, Silver, Gold, and/or the President's Call to Service Award (also referred to the President's Lifetime Achievement Award).[1] The Call to Service Award is the most prestigious, and it has been awarded to few Americans to recognize over 4,000 hours of extraordinary service including notable honorees such as S. Truett Cathy, Mark Carman, Zach Bonner. Awardees may receive a personalized certificate, an official pin, medallion, and/or a congratulatory letter from the President depending on the award earned.</p> <a href="https://www.presidentialserviceawards.gov">Learn More</a><br><br>
+				    	<div class="tags">Award</div>
+				    	<div class="tags">Service</div>
+				    	<div class="tags">USA</div><br><br><br></div>
+				    	<br>
+				 
+				</div>
+
+			</div></div>
+		</main>
+		<script src = "script.js"></script>
+		
+	<p id="footer">
+			© 2021 The StepUp Team Techacks
+		</p>
+	</body>
+
+</html>
